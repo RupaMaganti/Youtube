@@ -1,0 +1,125 @@
+<hmtl>
+    <head>
+        <title>Youtube Login</title>
+        <style>
+            body{
+                background-color: cyan;
+                position: fixed;
+            }
+            .Loginblock{
+                width: 900px;
+                position: fixed;
+                height: 390px;
+                background-color:white;
+                margin-left: 200px;
+                margin-top: 110px;
+                border-radius: 30px;
+            }
+            img{
+                width: 60px;
+                margin: 30px;
+            }
+            .signin{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 40px;
+                margin-left: 35px;
+                margin-top: -20px;
+            }
+            .continue{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                margin-top: -150px;
+                margin-left: 35px;
+            }
+            .mail{
+                margin-left: 500px;
+                margin-top: -25px;
+
+            }
+            .mail input{
+                width: 350px;
+                height: 40px;
+                border-radius:5px;
+                border: 1px solid black;
+                margin-bottom:20px ;
+            }
+            .mail a{
+                text-decoration: none;
+                margin-left: 5px;
+                
+            }
+            .submit{
+                margin-top: 20px;
+                margin-left: 500px;
+                
+            }
+            .submit button{
+                width: 350px;
+                height: 35px;
+                border-radius: 10px;
+                border:1px solid ;
+                cursor: pointer;
+                background-color:darkturquoise;
+            }
+            
+        </style>
+        <script>
+            function validateForm() {
+            var email = document.loginform.email.value;
+            var password = document.loginform.password.value;
+
+            if (email === "sujithbmunipalli@gmail.com" && password==="Siri@0071") {
+                window.location.href = "youtube project.html";
+                return false;
+            }
+            else if(email === "sujithbmunipalli@gmail.com" && password!="Siri@0071"){
+                alert("Please enter correct PASSWORD....")
+            }
+            else if(email != "sujithbmunipalli@gmail.com" && password==="Siri@0071"){
+                alert("Please enter correct MAIL ADDRESS....")
+            }
+            else if (email === "rupasupraja@gmail.com" && password==="Rupa@0017") {
+                window.location.href = "youtube project.html";
+                return false;
+            }
+            else if(email === "rupasupraja@gmail.com" && password!="Rupa@0071"){
+                alert("Please enter correct PASSWORD....")
+            }
+            else if(email != "rupasupraja@gmail.com" && password==="Rupa@0071"){
+                alert("Please enter correct MAIL ADDRESS....")
+            }
+            else{
+                alert("Please Enter Correct Details....")
+            }
+            return true;    
+        }
+
+        </script>
+    </head>
+    <body>
+        <form name="loginform"  onsubmit="return validateForm()">
+        <div class="Loginblock">
+            <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png">
+            <div class="signin">
+                Sign in 
+            </div>
+            <div class="mail">
+                <input type="email"  name="email" required placeholder="Email or Phone">
+                <input type="password"  name="password" required placeholder="Password">
+                <a href="https://accounts.google.com/signin/v2/usernamerecovery?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F%253FthemeRefresh%253D1&ddm=0&dsh=S755337062%3A1713372924130026&ec=65620&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=en&ifkv=ARZ0qKJQg2Fba1Dw_hMaMtjq1JTkkfXVpXDrUs_dzEG2X5QATTWxQLi3HXeXgpZekpslIVtxux7w&service=youtube&theme=mn">
+                    Forget Mail ?
+                </a>
+               
+            </div>
+            <div class="submit">
+                <button type="submit"><span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                Sign In</span></button>
+            </div>
+          
+            <div class="continue">
+                to continue to YouTube.
+            </div>
+        </div>
+        </form>
+    </body>
+</hmtl>
